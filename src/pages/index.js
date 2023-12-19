@@ -1,10 +1,12 @@
 import React from 'react';
 
+import { AppHeader } from '../components/AppHeader/AppHeader';
 import { TitleText } from '../components/TitleText/TitleText';
 
 const IndexPage = () => (
   <>
     <TitleText />
+    <AppHeader />
   </>
 );
 
