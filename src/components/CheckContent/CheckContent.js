@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 
-import { statusbox } from './CheckContent.module.scss';
+import { statusbox, turnbutton } from './CheckContent.module.scss';
 
 const CheckContent = () => {
   const [turnedOn, setTurnedOn] = useState(false);
@@ -15,7 +15,10 @@ const CheckContent = () => {
       <div className={`${statusbox}`} style={divStyle}>
         <p>{turnedOn ? 'turned on' : 'turned off'}</p>
       </div>
-      <button onClick={() => setTurnedOn(!turnedOn)}>
+      <button
+        className={`${turnbutton}`}
+        onClick={() => setTurnedOn(!turnedOn)}
+      >
         {turnedOn ? 'turn off' : 'turn on'}
       </button>
     </div>
