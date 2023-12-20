@@ -5,6 +5,7 @@ import { AppHeader } from '../components/AppHeader/AppHeader';
 import CheckContent from '../components/CheckContent/CheckContent';
 import Counter from '../components/Counter/Counter';
 import DynamicList from '../components/DynamicList/DynamicList';
+import SimpleForm from '../components/SimpleForm/SimpleForm';
 import TaskList from '../components/TaskList/TaskList';
 import { TitleText } from '../components/TitleText/TitleText';
 
@@ -22,6 +23,7 @@ const IndexPage = () => (
         { id: 3, text: 'Task 3', completed: false },
       ]}
     />
+    <SimpleForm />
   </>
 );
 
